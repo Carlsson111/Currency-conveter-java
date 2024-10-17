@@ -8,7 +8,7 @@ public class CurrencyConverterApp {
         boolean exit = false;
 
         while (!exit) {
-            System.out.println("Currency Converter Menu:");
+            System.out.println("\u001B[32m" +"Currency Converter Menu:"+ "\u001B[0m");
             System.out.println("1. Convert SEK to USD");
             System.out.println("2. Convert USD to SEK");
             System.out.println("3. Convert SEK to Euro");
@@ -26,36 +26,42 @@ public class CurrencyConverterApp {
                     double sekToUsd = scanner.nextDouble();
                     System.out.println("Converted amount: " + converter.convertSEKtoUSD(sekToUsd) + " USD");
                     System.out.println("Date and Time: " + converter.getCurrentDateTime());
+                    System.out.println("\n\n");
                     break;
                 case 2:
                     System.out.print("Enter amount in USD: ");
                     double usdToSek = scanner.nextDouble();
                     System.out.println("Converted amount: " + converter.convertUSDtoSEK(usdToSek) + " SEK");
                     System.out.println("Date and Time: " + converter.getCurrentDateTime());
+                    System.out.println("\n\n");
                     break;
                 case 3:
                     System.out.print("Enter amount in SEK: ");
                     double sekToEuro = scanner.nextDouble();
                     System.out.println("Converted amount: " + converter.convertSEKtoEuro(sekToEuro) + " Euro");
                     System.out.println("Date and Time: " + converter.getCurrentDateTime());
+                    System.out.println("\n\n");
                     break;
                 case 4:
                     System.out.print("Enter amount in Euro: ");
                     double euroToSek = scanner.nextDouble();
                     System.out.println("Converted amount: " + converter.convertEuroToSEK(euroToSek) + " SEK");
                     System.out.println("Date and Time: " + converter.getCurrentDateTime());
+                    System.out.println("\n\n");
                     break;
                 case 5:
                     System.out.print("Enter amount in USD: ");
                     double usdToEuro = scanner.nextDouble();
                     System.out.println("Converted amount: " + converter.convertUSDtoEuro(usdToEuro) + " Euro");
                     System.out.println("Date and Time: " + converter.getCurrentDateTime());
+                    System.out.println("\n\n");
                     break;
                 case 6:
                     System.out.print("Enter amount in Euro: ");
                     double euroToUsd = scanner.nextDouble();
                     System.out.println("Converted amount: " + converter.convertEuroToUSD(euroToUsd) + " USD");
                     System.out.println("Date and Time: " + converter.getCurrentDateTime());
+                    System.out.println("\n\n");
                     break;
                 case 7:
                     exit = true;
